@@ -29,11 +29,11 @@ body {
 
 #topButton {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin: 10px;
-    height:50px;
+    height: 50px;
     width: 450px;
-    
+
 }
 
 #calculatorResult {
@@ -59,6 +59,10 @@ body {
     border-radius: 15px;
 }
 
+#resetButton:hover{
+    background-color: yellow;
+}
+
 #deleteButton {
     border: 2px;
     border-style: solid;
@@ -70,4 +74,257 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+}
+
+#calculatorButton {
+    display: flex;
+    width: 485px;
+    height: 450px;
+}
+
+#numberButton {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    /* align-items: center;  */
+    flex-wrap: wrap;
+    width: 350px;
+    height: 350px;
+    margin: 16px;
+
+}
+
+#sideButton {
+    display: flex;
+    flex-direction: column;
+    width: 105px;
+    height: 350px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-right: 16px;
+
+}
+
+
+
+#number0 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number1 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number2 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number3 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number4 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number5 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number6 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number7 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number8 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+#number9 {
+    border: 2px;
+    border-style: solid;
+    /* height: 40px; */
+    /* width: 100px; */
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-basis: 25%;
+    margin: 2px;
+}
+
+
+#addButton {
+    border: 2px;
+    border-style: solid;
+    height: 40px;
+    width: 100px;
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#substractButton {
+    border: 2px;
+    border-style: solid;
+    height: 40px;
+    width: 100px;
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#multiplyButton {
+    border: 2px;
+    border-style: solid;
+    height: 40px;
+    width: 100px;
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#diviseButton {
+    border: 2px;
+    border-style: solid;
+    height: 40px;
+    width: 100px;
+    background-color: grey;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#bottomButton {
+    display: flex;
+
+}
+
+#equalButton {
+    border: 2px;
+    border-style: solid;
+    height: 40px;
+    width: 100px;
+    background-color: green;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
