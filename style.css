@@ -59,8 +59,9 @@ body {
     border-radius: 15px;
 }
 
-#resetButton:hover{
-    background-color: yellow;
+#resetButton:hover {
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #deleteButton {
@@ -76,6 +77,12 @@ body {
     border-radius: 15px;
 }
 
+#deleteButton:hover {
+    background-color: grey;
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
+}
+
 #calculatorButton {
     display: flex;
     width: 485px;
@@ -86,12 +93,10 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    /* align-items: center;  */
     flex-wrap: wrap;
     width: 350px;
     height: 350px;
     margin: 16px;
-
 }
 
 #sideButton {
@@ -110,8 +115,6 @@ body {
 #number0 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -120,13 +123,16 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number0:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #number1 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -135,13 +141,16 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number1:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #number2 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -150,13 +159,16 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number2:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #number3 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -165,13 +177,16 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number3:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #number4 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -180,13 +195,16 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number4:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #number5 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -195,13 +213,16 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number5:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #number6 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -210,13 +231,16 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number6:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #number7 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -225,13 +249,16 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number7:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #number8 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -242,11 +269,14 @@ body {
     margin: 2px;
 }
 
+#number8:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
+}
+
 #number9 {
     border: 2px;
     border-style: solid;
-    /* height: 40px; */
-    /* width: 100px; */
     background-color: grey;
     font-size: larger;
     display: flex;
@@ -255,6 +285,11 @@ body {
     border-radius: 15px;
     flex-basis: 25%;
     margin: 2px;
+}
+
+#number9:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 
@@ -271,6 +306,11 @@ body {
     border-radius: 15px;
 }
 
+#addButton:hover {
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
+}
+
 #substractButton {
     border: 2px;
     border-style: solid;
@@ -282,6 +322,11 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+}
+
+#substractButton:hover {
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #multiplyButton {
@@ -297,6 +342,11 @@ body {
     border-radius: 15px;
 }
 
+#multiplyButton:hover {
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
+}
+
 #diviseButton {
     border: 2px;
     border-style: solid;
@@ -308,6 +358,11 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+}
+
+#diviseButton:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
 
 #bottomButton {
@@ -327,4 +382,9 @@ body {
     justify-content: center;
     border-radius: 15px;
     margin-bottom: 10px;
+}
+
+#equalButton:hover{
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
 }
