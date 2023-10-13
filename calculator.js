@@ -1,13 +1,12 @@
-var secondElement = "", firstElement = "",operator = null , result = "";
+var secondElement = "", firstElement = "", operator = null, result = "", firstElementToUse = "", secondElemendToUse = "";
 
 
 document.getElementById("resetButton").addEventListener("click", function () {
-    console.log("ResetButtonClicked");
     firstElement = "";
-    secondElement ="";
-    result ="";
+    secondElement = "";
+    result = "";
     operator = null;
-    //console.log(operator);
+    clearScrean();
 });
 
 document.getElementById("deleteButton").addEventListener("click", function () {
@@ -15,133 +14,135 @@ document.getElementById("deleteButton").addEventListener("click", function () {
 });
 
 document.getElementById("number9").addEventListener("click", function () {
-    console.log("Number9ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(9);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(9);
+        show(9);
     } else {
-        secondElement = secondElement.concat(9);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(9);
+        show(9);
     }
 });
 
 document.getElementById("number8").addEventListener("click", function () {
-    console.log("Number8ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(8);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(8);
+        show(8);
     } else {
-        secondElement = secondElement.concat(8);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(8);
+        show(8);
     }
 });
 
 document.getElementById("number7").addEventListener("click", function () {
-    console.log("Number7ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(7);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(7);
+        show(7);
+
     } else {
-        secondElement = secondElement.concat(7);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(7);
+        show(7);
     }
 });
 
 document.getElementById("number6").addEventListener("click", function () {
-    console.log("Number6ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(6);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(6);
+        show(6);
+
     } else {
-        secondElement = secondElement.concat(6);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(6);
+        show(6);
     }
 });
 
 document.getElementById("number5").addEventListener("click", function () {
-    console.log("Number5ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(5);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(5);
+        show(5);
+
     } else {
-        secondElement = secondElement.concat(5);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(5);
+        show(5);
     }
 });
 
 document.getElementById("number4").addEventListener("click", function () {
-    console.log("Number4ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(4);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(4);
+        show(4);
+
     } else {
-        secondElement = secondElement.concat(4);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(4);
+        show(4);
     }
 });
 
 document.getElementById("number3").addEventListener("click", function () {
-    console.log("Number3ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(3);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(3);
+        show(3);
+
     } else {
-        secondElement = secondElement.concat(3);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(3);
+        show(3);
     }
 });
 
 document.getElementById("number2").addEventListener("click", function () {
-    console.log("Number2ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(2);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(2);
+        show(2);
+
     } else {
-        secondElement = secondElement.concat(2);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(2);
+        show(2);
     }
 });
 
 document.getElementById("number1").addEventListener("click", function () {
-    console.log("Number1ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(1);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(1);
+        show(1);
+
     } else {
-        secondElement = secondElement.concat(1);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(1);
+        show(1);
     }
 });
 
 document.getElementById("number0").addEventListener("click", function () {
-    console.log("Number0ButtonCLicked");
     if (operator == null) {
-        firstElement = firstElement.concat(0);
-        console.log(firstElement);
+        firstElementToUse = firstElementToUse.concat(0);
+        show(0);
+
     } else {
-        secondElement = secondElement.concat(0);
-        console.log(secondElement);
+        secondElemendToUse = secondElemendToUse.concat(0);
+        show(0);
     }
 });
 
 document.getElementById("addButton").addEventListener("click", function () {
     console.log("AddButtonButtonCLicked");
     operator = "+";
+    show(operator);
 });
 
 document.getElementById("substractButton").addEventListener("click", function () {
     console.log("SubstractButtonButtonCLicked");
     operator = "-";
+    show(operator);
 });
 
 document.getElementById("multiplyButton").addEventListener("click", function () {
     console.log("MultiplyButtonButtonCLicked");
     operator = "*";
+    show(operator);
 });
 
 document.getElementById("diviseButton").addEventListener("click", function () {
     console.log("DiviseButtonButtonCLicked");
     operator = "/";
+    show(operator);
 });
 
 document.getElementById("equalButton").addEventListener("click", function () {
@@ -150,8 +151,8 @@ document.getElementById("equalButton").addEventListener("click", function () {
 });
 
 function operate() {
-    firstElement = parseInt(firstElement);
-    secondElement = parseInt(secondElement);
+    firstElement = parseInt(firstElementToUse);
+    secondElement = parseInt(secondElemendToUse);
     switch (operator) {
         case "+":
             result = firstElement + secondElement;
@@ -169,7 +170,47 @@ function operate() {
             result = firstElement / secondElement;
             break;
     }
-
+    firstElementToUse ="";
+    secondElemendToUse="";
+    showTotal(result);
     console.log(result);
 }
 
+function show(toShow) {
+    if (document.getElementById("p3") == null) {
+        const para = document.createElement("p");
+        para.setAttribute("id", "p3");
+        const showNumber = document.getElementById('calculatorResult');
+        const numberToShow = document.createTextNode(toShow);
+        para.append(numberToShow);
+        showNumber.insertBefore(para,total);
+        firstElement = "";
+    } else {
+        const toAdd = document.getElementById("p3");
+        toAdd.append(toShow);
+        firstElement = "";
+    }
+
+}
+
+function clearScrean() {
+    // const para = document.getElementById("p3");
+    // if (document.getElementById("p3") != null) {
+    //     para.remove();
+    //     const para = document.createElement("p");
+    //     para.setAttribute("id", "p3");
+    // }
+    // const toRemove = document.getElementById("total");
+    // if(document.getElementById("total")!=null){
+    //     toRemove.remove();
+    //     const para = document.createElement("p");
+
+    // }
+    location.reload();
+}
+
+function showTotal(total){
+    const resultToShow = document.getElementById("total");
+    const totalToShow = document.createTextNode(total);
+    resultToShow.append(totalToShow);
+}
